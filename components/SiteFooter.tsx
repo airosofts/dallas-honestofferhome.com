@@ -1,0 +1,121 @@
+import Link from "next/link";
+
+export default function SiteFooter() {
+  const year = new Date().getFullYear();
+  return (
+    <footer>
+      <div className="container-site">
+        <div className="foot-grid">
+          <div className="foot foot-brand">
+            <Link
+              href="/"
+              className="brand"
+              aria-label="Honest Offer — Sell Your House Fast"
+            >
+              <span className="brand-mark" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path className="mark-house" d="M3 11L12 4l9 7v9H3V11z" />
+                  <path className="mark-check" d="M8 14.5l2.5 2.5L16 11.5" />
+                </svg>
+              </span>
+              <span className="brand-text">
+                <span className="brand-name">
+                  Honest Offer <span className="brand-suffix">Inc.</span>
+                </span>
+                <span className="brand-tagline">Sell Your House Fast</span>
+              </span>
+            </Link>
+            <p>
+              Straight-talk cash offers on houses in your area. Locally owned,
+              family-operated, licensed and insured.
+            </p>
+            <a
+              href="tel:+18887808805"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.4rem",
+                color: "var(--barn)",
+                fontWeight: 700,
+                fontSize: "0.95rem",
+                textDecoration: "none",
+                marginTop: "0.5rem",
+              }}
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.49 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.4 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.1a16 16 0 0 0 5.91 5.91l1.51-1.51a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              (888) 780-8805
+            </a>
+          </div>
+          <div className="foot">
+            <h5>Service</h5>
+            <ul>
+              <li>Fair cash offers</li>
+              <li>Sell as-is, any condition</li>
+              <li>You pick the closing date</li>
+            </ul>
+          </div>
+          <div className="foot">
+            <h5>About</h5>
+            <ul>
+              <li>Locally owned</li>
+              <li>Licensed &amp; insured</li>
+              <li>BBB Accredited A+</li>
+            </ul>
+          </div>
+          <div className="foot foot-visit">
+            <h5>Visit Us</h5>
+            <address style={{ fontStyle: "normal", fontSize: "0.9rem", lineHeight: 1.6, color: "var(--ink-soft)" }}>
+              1720 Northwest Hwy<br />
+              Garland, TX 75042
+            </address>
+            <div style={{ marginTop: 10, borderRadius: "var(--radius)", overflow: "hidden", border: "1px solid var(--line)" }}>
+              <iframe
+                title="Honest Offer office location on Google Maps"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRMxUxsq4taEGbcelOv-IvlJk6R36IbLA&q=place_id:ChIJ40N-hiunToYR6KQy921SKVM&zoom=15"
+                width="100%"
+                height="160"
+                style={{ border: 0, display: "block" }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+            <a
+              href="https://www.google.com/maps/place/?cid=5992411411445359848"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-block", marginTop: 8, fontSize: "0.85rem", color: "var(--barn)", fontWeight: 600 }}
+            >
+              Open in Google Maps →
+            </a>
+          </div>
+        </div>
+        <div className="foot-legal">
+          <div>© {year} Honest Offer Inc. Licensed &amp; insured.</div>
+          <div>
+            <Link href="/privacy">Privacy</Link> ·{" "}
+            <Link href="/terms">Terms</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
