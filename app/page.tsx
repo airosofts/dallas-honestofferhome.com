@@ -120,7 +120,39 @@ export default function DallasPage() {
             </div>
           </div>
 
-          <LeadForm />
+          <div>
+            <LeadForm />
+            <figure style={{ margin: "1.25rem 0 0" }}>
+              <div
+                style={{
+                  position: "relative",
+                  aspectRatio: "4 / 3",
+                  borderRadius: "var(--radius)",
+                  overflow: "hidden",
+                  border: "1px solid var(--line)",
+                  background: "var(--paper)",
+                }}
+              >
+                <Image
+                  src="/team.png"
+                  alt="The Honest Offer team — local Dallas–Fort Worth cash home buyers"
+                  fill
+                  sizes="(max-width: 900px) 100vw, 480px"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <figcaption
+                style={{
+                  fontSize: "0.85rem",
+                  color: "var(--muted)",
+                  marginTop: "0.6rem",
+                  textAlign: "center",
+                }}
+              >
+                Your local Dallas team · Born, based, and buying across North Texas.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
