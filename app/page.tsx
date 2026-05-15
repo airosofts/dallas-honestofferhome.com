@@ -677,12 +677,12 @@ export default function DallasPage() {
             <div className="foot">
               <h5>Situations We Help</h5>
               <ul>
-                <li>Inherited property</li>
-                <li>Divorce</li>
-                <li>Foreclosure</li>
-                <li>Tired landlord</li>
-                <li>Any condition / as-is</li>
-                <li>Sell fast</li>
+                <li><Link href="/sell-inherited-house-texas">Inherited property</Link></li>
+                <li><Link href="/sell-house-divorce-texas">Divorce</Link></li>
+                <li><Link href="/stop-foreclosure-texas">Foreclosure</Link></li>
+                <li><Link href="/sell-rental-property-texas">Tired landlord</Link></li>
+                <li><Link href="/sell-house-as-is-texas">Any condition / as-is</Link></li>
+                <li><Link href="/sell-house-fast-texas">Sell fast</Link></li>
               </ul>
             </div>
             <div className="foot">

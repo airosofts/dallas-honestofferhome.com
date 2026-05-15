@@ -11,7 +11,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`,      lastModified: new Date(), changeFrequency: "yearly",  priority: 0.6 },
     { url: `${BASE}/privacy`,      lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
     { url: `${BASE}/terms`,        lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
-    // TODO: add /sell-*-texas situation pages and DFW city sub-pages
-    // (Fort Worth, Plano, Arlington, Irving, Garland) once those are built.
+
+    // Situation pages (linked from the home-page footer)
+    { url: `${BASE}/sell-inherited-house-texas`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/sell-house-divorce-texas`,   lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/stop-foreclosure-texas`,     lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/sell-rental-property-texas`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/sell-house-as-is-texas`,     lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/sell-house-fast-texas`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+
+    // TODO: DFW city sub-pages (Fort Worth, Plano, Arlington, Irving, Garland) once those are built.
   ];
 }
